@@ -71,4 +71,4 @@ You win!
 
 ## License
 
-This is a learning project.
+This is a learning project based on chapter 2 of ["The Rust Programming Language"](https://doc.rust-lang.org/book/) book.
