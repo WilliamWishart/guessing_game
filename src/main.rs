@@ -4,7 +4,10 @@ use rand::Rng;
 
 fn main() {
     println!("Guess the number!");
+    println!("You guessed: {}", game());
+}
 
+fn game() -> u32 {
     let secret_number = rand::rng().random_range(1..=100);
     println!("The secret number is: {secret_number}");
 
@@ -28,10 +31,9 @@ fn main() {
             Ordering::Greater => println!("Too big!"),
             Ordering::Equal => {
                 println!("You win!");
-                break;
+                return guess;
             }
         }
 
-        println!("You guessed: {guess}");
     }
 }
